@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom"
+    android:background="#88676767"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingEnd="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp"
+        android:paddingStart="16dp"
+        android:text="00:00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <SeekBar
+        android:id="@+id/mediacontroller_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/play"
+        android:layout_toRightOf="@id/time_current"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/progressbar"
+        android:thumb="@drawable/progressbar_thumb"
+        android:thumbOffset="2dp" />
+
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/playcontrol"
+        android:tint="@color/colorPrimary" />
+
+</RelativeLayout>
+
+
